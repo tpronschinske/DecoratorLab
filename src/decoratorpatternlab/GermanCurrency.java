@@ -15,7 +15,6 @@ import java.util.Locale;
  */
 public class GermanCurrency extends Currency {
     
-    private Locale locale;
     
     public GermanCurrency(){
         this.setCurrencyType("German Currency");
@@ -23,7 +22,7 @@ public class GermanCurrency extends Currency {
     
 
     @Override
-    public String money(String money) {
+    public String money(double money) {
         NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.GERMAN);
         return nf.format(money);
     }

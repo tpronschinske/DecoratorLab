@@ -15,7 +15,7 @@ import java.util.Locale;
  */
 public class USCurrency extends Currency{
     
-    private Locale locale;
+   
     
     public USCurrency(){
         this.setCurrencyType("United States Currency");
@@ -24,7 +24,7 @@ public class USCurrency extends Currency{
     
 
     @Override
-    public String money(String money) {
+    public String money(double money) {
         NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.US);
         return nf.format(money);
     }

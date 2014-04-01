@@ -15,8 +15,7 @@ import java.util.Locale;
  */
 public class CanadaCurrency extends Currency {
     
-    private Locale locale;
-    
+   
     public CanadaCurrency(){
         this.setCurrencyType("Canadian Currency");
     }
@@ -24,7 +23,7 @@ public class CanadaCurrency extends Currency {
     
 
      @Override
-    public String money(String money) {
+    public String money(double money) {
         NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.CANADA);
         return nf.format(money);
     }

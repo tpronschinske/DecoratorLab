@@ -16,7 +16,7 @@ public abstract class Currency {
     
     private String description = "Currency Type";
     
-    public abstract String money(String money);
+    public abstract String money(double money);
     
     public String getCurrencyType(){
         return description;

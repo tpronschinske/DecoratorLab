@@ -6,6 +6,8 @@
 
 package decoratorpatternlab;
 
+import java.text.NumberFormat;
+
 
 public class StartUp {
 
@@ -13,10 +15,14 @@ public class StartUp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        NumberFormat nf = NumberFormat.getCurrencyInstance();
         
-         
+        
+        Currency c = new CanadaCurrency();
+        c.money(12.53);
+        c.getCurrencyType();
 
-      
+        System.out.println(c);
         
         
     }

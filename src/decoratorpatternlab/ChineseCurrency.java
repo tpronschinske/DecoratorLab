@@ -15,7 +15,7 @@ import java.util.Locale;
  */
 public class ChineseCurrency extends Currency {
      
-    private Locale locale;
+    
     
     public ChineseCurrency(){
         this.setCurrencyType("Chinese Currency");
@@ -24,7 +24,7 @@ public class ChineseCurrency extends Currency {
     
 
      @Override
-    public String money(String money) {
+    public String money(double money) {
         NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.CHINESE);
         return nf.format(money);
     }
