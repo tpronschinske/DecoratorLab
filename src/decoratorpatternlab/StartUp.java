@@ -26,16 +26,20 @@ public class StartUp {
         
         
         Currency c2 = new GermanCurrency();
-        System.out.println(c2.money(100.01));
+        System.out.println(c2.money(10870.01));
         System.out.println(c2.getCurrencyType());
         
         Currency c3 = new ChineseCurrency();
-        System.out.println(c3.money(252.46));
+        System.out.println(c3.money(25652.46));
         System.out.println(c3.getCurrencyType());
         
-         Currency c4 = new JapanCurrency();
+        Currency c4 = new JapanCurrency();
         System.out.println(c4.money(22552.46));
         System.out.println(c4.getCurrencyType());
+        
+        Currency c5 = new ItalianCurrency();
+        System.out.println(c5.money(1092.46));
+        System.out.println(c5.getCurrencyType());
         
     }
     
