@@ -23,11 +23,10 @@ public class ChineseCurrency extends Currency {
     
     
 
-    @Override
-    public Locale money() {
-        locale = Locale.CHINESE;
-        NumberFormat.getCurrencyInstance(locale);
-        return locale;
+     @Override
+    public String money(String money) {
+        NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.CHINESE);
+        return nf.format(money);
     }
     
     

@@ -24,10 +24,9 @@ public class USCurrency extends Currency{
     
 
     @Override
-    public Locale money() {
-        locale = Locale.US;
-        NumberFormat.getCurrencyInstance(locale);
-        return locale;
+    public String money(String money) {
+        NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.US);
+        return nf.format(money);
     }
 
    

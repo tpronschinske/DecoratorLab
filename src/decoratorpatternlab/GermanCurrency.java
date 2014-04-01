@@ -13,7 +13,7 @@ import java.util.Locale;
  *
  * @author Celeste
  */
-public class GermanCurrency extends Currency{
+public class GermanCurrency extends Currency {
     
     private Locale locale;
     
@@ -21,13 +21,11 @@ public class GermanCurrency extends Currency{
         this.setCurrencyType("German Currency");
     }
     
-    
 
     @Override
-    public Locale money() {
-        locale = Locale.GERMAN;
-        NumberFormat.getCurrencyInstance(locale);
-        return locale;
+    public String money(String money) {
+        NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.GERMAN);
+        return nf.format(money);
     }
     
 }

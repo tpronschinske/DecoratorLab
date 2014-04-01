@@ -16,12 +16,11 @@ public abstract class Currency {
     
     private String description = "Currency Type";
     
-    public abstract Locale money();
+    public abstract String money(String money);
     
     public String getCurrencyType(){
         return description;
     }
-    
     
     public void setCurrencyType(String currencyType){
         this.description = currencyType;

@@ -6,12 +6,7 @@
 
 package decoratorpatternlab;
 
-import java.util.Locale;
 
-/**
- *
- * @author Celeste
- */
 public class StartUp {
 
     /**

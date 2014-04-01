@@ -23,11 +23,10 @@ public class CanadaCurrency extends Currency {
     
     
 
-    @Override
-    public Locale money() {
-        locale = Locale.CANADA;
-        NumberFormat.getCurrencyInstance(locale);
-        return locale;
+     @Override
+    public String money(String money) {
+        NumberFormat nf = NumberFormat.getCurrencyInstance(Locale.CANADA);
+        return nf.format(money);
     }
     
 }
