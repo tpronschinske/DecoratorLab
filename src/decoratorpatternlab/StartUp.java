@@ -15,17 +15,27 @@ public class StartUp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        NumberFormat nf = NumberFormat.getCurrencyInstance();
+        
         
         
         Currency c = new CanadaCurrency();
-        c.money(12.53);
-        c.getCurrencyType();
-       
         
-
-//        System.out.println(nf.format(c) + c.getCurrencyType());
-        System.out.println(c);
+        System.out.println(c.money(12.53));
+        System.out.println(c.getCurrencyType());
+        
+        
+        
+        Currency c2 = new GermanCurrency();
+        System.out.println(c2.money(100.01));
+        System.out.println(c2.getCurrencyType());
+        
+        Currency c3 = new ChineseCurrency();
+        System.out.println(c3.money(252.46));
+        System.out.println(c3.getCurrencyType());
+        
+         Currency c4 = new JapanCurrency();
+        System.out.println(c4.money(22552.46));
+        System.out.println(c4.getCurrencyType());
         
     }
     
