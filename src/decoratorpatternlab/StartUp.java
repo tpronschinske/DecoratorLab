@@ -19,11 +19,8 @@ public class StartUp {
         
         
         Currency c = new CanadaCurrency();
-        
         System.out.println(c.money(12.53));
         System.out.println(c.getCurrencyType());
-        
-        
         
         Currency c2 = new GermanCurrency();
         System.out.println(c2.money(10870.01));

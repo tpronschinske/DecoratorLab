@@ -13,11 +13,11 @@ import java.util.Locale;
  *
  * @author Celeste
  */
-public class USCurrency extends Currency{
+public class UnitedStatesCurrency extends Currency{
     
    
     
-    public USCurrency(){
+    public UnitedStatesCurrency(){
         this.setCurrencyType("United States Currency");
     }
     
