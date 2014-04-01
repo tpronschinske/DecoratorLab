@@ -21,9 +21,11 @@ public class StartUp {
         Currency c = new CanadaCurrency();
         c.money(12.53);
         c.getCurrencyType();
-
-        System.out.println(c);
+       
         
+
+//        System.out.println(nf.format(c) + c.getCurrencyType());
+        System.out.println(c);
         
     }
     
